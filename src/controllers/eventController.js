@@ -87,7 +87,7 @@ const updateEvent = async (req, res, next) => {
             createdAt: req.body.createdAt,
             updatedAt: req.body.updatedAt
         }
-        const response = await database.getDb().db().collection('events').repleaceOne({ _id: eventId }, event);
+        const response = await database.getDb().db().collection('events').replaceOne({ _id: eventId }, event);
         if (response.modifiedCounnt > 0) {
             res.status(200).send();
         } else {

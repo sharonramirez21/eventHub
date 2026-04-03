@@ -50,7 +50,7 @@ const updateUser = async (req, res, next) => {
             avatarUrl: req.body.avatarUrl,
             createdAt: req.body.createdAt
         }
-        const response = await database.getDb().db().collection('users').repleaceOne({ _id: userId }, user);
+        const response = await database.getDb().db().collection('users').replaceOne({ _id: userId }, user);
         if (response.modifiedCounnt > 0) {
             res.status(200).send();
         } else {

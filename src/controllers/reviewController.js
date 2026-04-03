@@ -77,7 +77,7 @@ const updateReview = async (req, res, next) => {
             comment: req.body.comment,
             createdAt: req.body.createdAt
         };
-        const response = await database.getDb().db().collection('reviews').repleaceOne({ _id: reviewId }, review);
+        const response = await database.getDb().db().collection('reviews').replaceOne({ _id: reviewId }, review);
         if (response.modifiedCounnt > 0) {
             res.status(200).send();
         } else {
