@@ -78,7 +78,7 @@ const updateReview = async (req, res, next) => {
             createdAt: req.body.createdAt
         };
         const response = await database.getDb().db().collection('reviews').replaceOne({ _id: reviewId }, review);
-        if (response.modifiedCounnt > 0) {
+        if (response.modifiedCount > 0) {
             res.status(200).send();
         } else {
             res.status(500).json(response.error || 'Error ocurred util we update the review');

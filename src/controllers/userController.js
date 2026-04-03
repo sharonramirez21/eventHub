@@ -51,7 +51,7 @@ const updateUser = async (req, res, next) => {
             createdAt: req.body.createdAt
         }
         const response = await database.getDb().db().collection('users').replaceOne({ _id: userId }, user);
-        if (response.modifiedCounnt > 0) {
+        if (response.modifiedCount > 0) {
             res.status(200).send();
         } else {
             res.status(500).json(response.error || 'Error ocurred util we update the user');
