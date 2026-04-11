@@ -33,7 +33,7 @@ const getOneUser = async (req, res, next) => {
 
 // POST --- CREATE USER 
 const createUser = async (req, res, next) => {
-    //#swagger.tags=['reviews']
+    //#swagger.tags=['users']
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
