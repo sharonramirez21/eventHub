@@ -11,8 +11,6 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const cors = require("cors");
 
 
-
-
 app
     .use(bodyParser.json())
     .use(session({
@@ -20,13 +18,6 @@ app
         resave: false,
         saveUninitialized: true,
     }))
-    .use(
-        session({
-            secret: "secret",
-            resave: false,
-            saveUninitialized: false,
-        })
-    )
     // This is the best express session ({..}) initialization
     .use(passport.initialize())
     // init passport on every route call.
@@ -101,11 +92,16 @@ app.get('/auth/google/callback', passport.authenticate('google', {
 
 
 
-mongodb.intMongo((err) => {
-    if (err) {
-        console.log(err);
-    }
-    else {
-        app.listen(port, () => { console.log(`Database is listening and node is running on port ${port}`) });
-    }
-});
+if (process.env.NODE_ENV !== "test") {
+    mongodb.intMongo((err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            app.listen(port, () => {
+                console.log(`Database is listening and node is running on port ${port}`);
+            });
+        }
+    });
+}
+
+module.exports = app;

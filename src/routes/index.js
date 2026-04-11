@@ -14,10 +14,10 @@ router.use('/registrations', require('./registrationRoutes'));
 router.use('/reviews', require('./reviewRoutes'));
 
 // API RUNNING
-router.get('/', (req, res) => {
+//router.get('/', (req, res) => {
     //#swagger.tags=['API running']
-    res.send('API RUNNING');
-});
+  //  res.send('API RUNNING');
+// });
 
 
 
@@ -48,9 +48,9 @@ router.get(
 );
 
 
-// 🔹 Start Google login
+// Start Google login
 router.get(
-  "/auth/google",
+  "/auth/github/callback",
   passport.authenticate("google", { scope: ["profile", "email"] })
 );
 
