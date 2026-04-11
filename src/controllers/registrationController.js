@@ -44,7 +44,7 @@ const createRegistration = async (req, res, next) => {
         const registration = {
             userId: req.body.userId,
             eventId: req.body.eventId,
-            datregisteredAte: req.body.registeredAt,
+            datregisteredAte: req.body.datregisteredAte,
         };
 
         const response = await database.getDb().db().collection('registrations').insertOne(registration);
@@ -85,7 +85,6 @@ const updateRegistration = async (req, res, next) => {
     }
 
 }
-
 
 // DELETE REGISTRATION BY ID
 const deleteRegistration = async (req, res, next) => {
