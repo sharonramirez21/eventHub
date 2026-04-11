@@ -67,7 +67,7 @@ const deleteUser = async (req, res, next) => {
     //#swagger.tags=['users']
     try {
         const userId = new ObjectId(req.params.id);
-        const response = await database.getDb().db().collection('events').deleteOne({ _id: userId });
+        const response = await database.getDb().db().collection('users').deleteOne({ _id: userId });
         if (response.deletedCount > 0) {
             res.status(204).send();
         } else {
