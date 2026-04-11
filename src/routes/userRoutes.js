@@ -6,6 +6,7 @@ const { isAdmin } = require("../middleware/authorizationMiddleware");
 
 router.get('/', isAdmin, userController.getAllUsers);
 router.get('/:id', userController.getOneUser);
+router.post('/', validateUser, userController.createUser);
 router.put('/:id', validateUser, userController.updateUser);
 router.delete('/:id', isAdmin, userController.deleteUser);
 

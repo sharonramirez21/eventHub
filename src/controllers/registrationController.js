@@ -59,6 +59,34 @@ const createRegistration = async (req, res, next) => {
 };
 
 
+// PUT --- REGISTRATION
+const updateRegistration = async (req, res, next) => {
+    //#swagger.tags=['registrations']
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+    try {
+        const registrationId = new ObjectId(req.params.id);
+        const registration = {
+            userId: req.body.userId,
+            eventId: req.body.eventId,
+            datregisteredAte: req.body.registeredAt,
+        }
+        const response = await database.getDb().db().collection('events').replaceOne({ _id: registrationId }, registration);
+        if (response.modifiedCount > 0) {
+            res.status(200).send();
+        } else {
+            res.status(500).json(response.error || 'Error ocurred util we update the registration');
+        }
+    } catch (error) {
+        next(error);
+    }
+
+}
+
+
 // DELETE REGISTRATION BY ID
 const deleteRegistration = async (req, res, next) => {
     //#swagger.tags=['registrations']
@@ -75,4 +103,4 @@ const deleteRegistration = async (req, res, next) => {
     }
 }
 
-module.exports = { getAllRegistrations, getOneRegistration, createRegistration, deleteRegistration };
+module.exports = { getAllRegistrations, getOneRegistration, createRegistration, updateRegistration, deleteRegistration };

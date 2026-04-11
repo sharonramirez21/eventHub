@@ -31,6 +31,35 @@ const getOneUser = async (req, res, next) => {
     }
 }
 
+// POST --- CREATE USER 
+const createUser = async (req, res, next) => {
+    //#swagger.tags=['reviews']
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+    try {
+        const user = {
+            googleId: req.body.googleId,
+            githubId: req.body.githubId,
+            name: req.body.name,
+            email: req.body.email,
+            avatarUrl: req.body.avatarUrl,
+            createdAt: req.body.createdAt
+        };
+
+        const response = await database.getDb().db().collection('reviews').insertOne(user);
+        if (response.acknowledged) {
+            res.status(204).send();
+        } else {
+            res.status(500).json(response.error || 'Error ocurred until we created the user');
+        }
+    } catch (error) {
+        next(error);
+    }
+};
 
 // PUT --- USER
 const updateUser = async (req, res, next) => {
@@ -78,4 +107,4 @@ const deleteUser = async (req, res, next) => {
     }
 }
 
-module.exports = { getAllUsers, getOneUser, updateUser, deleteUser };
+module.exports = { getAllUsers, getOneUser, createUser ,updateUser, deleteUser };

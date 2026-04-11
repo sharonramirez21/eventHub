@@ -8,6 +8,7 @@ const {isAuthenticated} = require('../middleware/authenticate')
 router.get('/', registrationController.getAllRegistrations);
 router.get('/:id', registrationController.getOneRegistration);
 router.post('/', isAuthenticated, validateRegistration ,registrationController.createRegistration);
+router.put("/:id", isAuthenticated, registrationController.updateRegistration);
 router.delete('/:id',isAuthenticated,  registrationController.deleteRegistration);
 
 module.exports = router;
