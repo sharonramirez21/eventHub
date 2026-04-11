@@ -2,7 +2,7 @@ const isAdmin = (req, res, next) => {
     if (req.user && req.user.role === "admin") {
         return next();
     }
-    return res.status(403).json({ message: "Forbidden" });
+    return res.status(403).json({ message: "You need to be and Admin" });
 };
 
 module.exports = { isAdmin };
