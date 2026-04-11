@@ -44,7 +44,7 @@ const createRegistration = async (req, res, next) => {
         const registration = {
             userId: req.body.userId,
             eventId: req.body.eventId,
-            datregisteredAte: req.body.datregisteredAte,
+            registeredAt: req.body.registeredAt,
         };
 
         const response = await database.getDb().db().collection('registrations').insertOne(registration);
@@ -72,7 +72,7 @@ const updateRegistration = async (req, res, next) => {
         const registration = {
             userId: req.body.userId,
             eventId: req.body.eventId,
-            datregisteredAte: req.body.registeredAt,
+            registeredAt: req.body.registeredAt,
         }
         const response = await database.getDb().db().collection('registrations').replaceOne({ _id: registrationId }, registration);
         if (response.modifiedCount > 0) {
