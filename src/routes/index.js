@@ -20,13 +20,48 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('/login', passport.authenticate('github'), (req, res) => { });
-router.get('/logout', function (req, res, next) {
-    req.logout(function (err) {
-        if (err) { return next(err); }
-        res.redirect('/');
-    });
-    });
+
+router.get("/login", (req, res) => {
+  res.send(`
+    <h2>Login Page</h2>
+    <a href="/auth/github">Login with GitHub</a><br>
+    <a href="/auth/google">Login with Google</a>
+  `);
+});
+
+router.get("/logout", (req, res) => {
+  req.session.destroy(() => {
+    res.redirect("/login");
+  });
+});
+
+
+router.get("/auth/github", passport.authenticate("github"));
+
+router.get(
+  "/github/callback",
+  passport.authenticate("github", { failureRedirect: "/login" }),
+  (req, res) => {
+    req.session.user = req.user;
+    res.redirect("/");
+  }
+);
+
+
+// 🔹 Start Google login
+router.get(
+  "/auth/google",
+  passport.authenticate("google", { scope: ["profile", "email"] })
+);
+
+router.get(
+  "/auth/google/callback",
+  passport.authenticate("google", { failureRedirect: "/login" }),
+  (req, res) => {
+    req.session.user = req.user;
+    res.redirect("/");
+  }
+);
 
 
 module.exports = router;

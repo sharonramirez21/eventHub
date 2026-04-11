@@ -7,6 +7,7 @@ const port = process.env.PORT || 3000;
 const passport = require("passport");
 const session = require("express-session");
 const GitHubStrategy = require("passport-github2").Strategy;
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const cors = require("cors");
 
 
@@ -19,6 +20,13 @@ app
         resave: false,
         saveUninitialized: true,
     }))
+    .use(
+        session({
+            secret: "secret",
+            resave: false,
+            saveUninitialized: false,
+        })
+    )
     // This is the best express session ({..}) initialization
     .use(passport.initialize())
     // init passport on every route call.
@@ -38,36 +46,59 @@ app
     .use('/', require('./src/routes/index.js'))
     .use(errorHandler);
 
-    passport.use(new GitHubStrategy({
-        clientID: process.env.GITHUB_CLIENT_ID,
-        clientSecret: process.env.GITHUB_CLIENT_SECRET,
-        callbackURL: process.env.CALLBACK_URL
+passport.use(new GitHubStrategy({
+    clientID: process.env.GITHUB_CLIENT_ID,
+    clientSecret: process.env.GITHUB_CLIENT_SECRET,
+    callbackURL: process.env.CALLBACK_URL
 
-    },
+},
     //use FindOr create ({githubId: profile.id}, function (err, user))
     function (accessToken, refreshToken, profile, done) {
         return done(null, profile)
     }
 ))
 
+passport.use(
+    new GoogleStrategy(
+        {
+            clientID: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+            callbackURL: process.env.GOOGLE_CALLBACK_URL,
+        },
+        function (accessToken, refreshToken, profile, done) {
+            return done(null, profile);
+        }
+    ));
+
 
 passport.serializeUser((user, done) => {
-  done(null, user);
+    done(null, user);
 })
 
 passport.deserializeUser((user, done) => {
-  done(null, user);
+    done(null, user);
 })
 
 
 app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `Logend is as ${req.session.user.displayName}` : "Logged Out") });
+
 app.get('/github/callback', passport.authenticate('github', {
-  failureRedirect: '/api-docs', session: false
+    failureRedirect: '/api-docs', session: false
 }),
-  (req, res) => {
-    req.session.user = req.user;
-    res.redirect('/');
-  });
+    (req, res) => {
+        req.session.user = req.user;
+        res.redirect('/');
+    });
+
+
+app.get('/auth/google/callback', passport.authenticate('google', {
+    failureRedirect: '/api-docs', session: false
+}),
+    (req, res) => {
+        req.session.user = req.user;
+        res.redirect('/');
+    });
+
 
 
 mongodb.intMongo((err) => {
