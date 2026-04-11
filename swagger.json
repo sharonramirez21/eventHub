@@ -5,10 +5,10 @@
     "description": "EventHub API",
     "version": "1.0.0"
   },
-  "host": "eventhub-m4le.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http","https"
   ],
   "paths": {
     "/": {
