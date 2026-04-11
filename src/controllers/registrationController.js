@@ -74,7 +74,7 @@ const updateRegistration = async (req, res, next) => {
             eventId: req.body.eventId,
             datregisteredAte: req.body.registeredAt,
         }
-        const response = await database.getDb().db().collection('events').replaceOne({ _id: registrationId }, registration);
+        const response = await database.getDb().db().collection('registrations').replaceOne({ _id: registrationId }, registration);
         if (response.modifiedCount > 0) {
             res.status(200).send();
         } else {

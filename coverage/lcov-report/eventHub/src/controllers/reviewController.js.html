@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for eventHub/server.js</title>
+    <title>Code coverage report for eventHub/src/controllers/reviewController.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">eventHub</a> server.js</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">eventHub/src/controllers</a> reviewController.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">64.1% </span>
+                <span class="strong">30% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>25/39</span>
+                <span class='fraction'>15/50</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/8</span>
+                <span class='fraction'>0/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10% </span>
+                <span class="strong">28.57% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/10</span>
+                <span class='fraction'>2/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">65.78% </span>
+                <span class="strong">30% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>25/38</span>
+                <span class='fraction'>15/50</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -169,92 +169,47 @@
 <a name='L104'></a><a href='#L104'>104</a>
 <a name='L105'></a><a href='#L105'>105</a>
 <a name='L106'></a><a href='#L106'>106</a>
-<a name='L107'></a><a href='#L107'>107</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -263,125 +218,173 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span></td><td class="text"><pre class="prettyprint lang-js">const express = require("express");
-const app = express();
-const mongodb = require("./src/config/db");
-const bodyParser = require("body-parser");
-const errorHandler = require('./src/middleware/errorHandler');
-const port = process.env.PORT || 3000;
-const passport = require("passport");
-const session = require("express-session");
-const GitHubStrategy = require("passport-github2").Strategy;
-const GoogleStrategy = require("passport-google-oauth20").Strategy;
-const cors = require("cors");
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span></td><td class="text"><pre class="prettyprint lang-js">const database = require('../config/db');
+const ObjectId = require('mongodb').ObjectId; // id from database
+const { validationResult } = require('express-validator');
 &nbsp;
-&nbsp;
-app
-    .use(bodyParser.json())
-    .use(session({
-        secret: "secret",
-        resave: false,
-        saveUninitialized: true,
-    }))
-    // This is the best express session ({..}) initialization
-    .use(passport.initialize())
-    // init passport on every route call.
-    .use(passport.session())
-    // allow passport to use "express-session"
-    .use((req, res, next) =&gt; {
-        res.setHeader('Access-Control-Allow-Origin', '*');
-        res.setHeader(
-            'Access-Control-Allow-Headers',
-            'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
-        );
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-        next();
-    })
-    .use(cors({ method: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"] }))
-    .use(cors({ origin: "*" }))
-    .use('/', require('./src/routes/index.js'))
-    .use(errorHandler);
-&nbsp;
-passport.use(new GitHubStrategy({
-    clientID: process.env.GITHUB_CLIENT_ID,
-    clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: process.env.CALLBACK_URL
-&nbsp;
-},
-    //use FindOr create ({githubId: profile.id}, function (err, user))
-<span class="fstat-no" title="function not covered" >    fu</span>nction (accessToken, refreshToken, profile, done) {
-<span class="cstat-no" title="statement not covered" >        return done(null, profile)</span>
+// GET ALL REVIEWS
+const getAllReviews = async (req, res, next) =&gt; {
+    //#swagger.tags=['reviews']
+    try {
+        const result = await database.getDb().db().collection('reviews').find();
+<span class="cstat-no" title="statement not covered" >        result.toArray().then(<span class="fstat-no" title="function not covered" >(r</span>eviews) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            res.setHeader('Content-type', 'application/json');</span>
+<span class="cstat-no" title="statement not covered" >            res.status(200).json(reviews);</span>
+        });
+    } catch (error) {
+        next(error);
     }
-))
+};
 &nbsp;
-passport.use(
-    new GoogleStrategy(
-        {
-            clientID: process.env.GOOGLE_CLIENT_ID,
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: process.env.GOOGLE_CALLBACK_URL,
-        },
-<span class="fstat-no" title="function not covered" >        fu</span>nction (accessToken, refreshToken, profile, done) {
-<span class="cstat-no" title="statement not covered" >            return done(null, profile);</span>
-        }
-    ));
-&nbsp;
-&nbsp;
-passport.serializeUser(<span class="fstat-no" title="function not covered" >(u</span>ser, done) =&gt; {
-<span class="cstat-no" title="statement not covered" >    done(null, user);</span>
-})
-&nbsp;
-passport.deserializeUser(<span class="fstat-no" title="function not covered" >(u</span>ser, done) =&gt; {
-<span class="cstat-no" title="statement not covered" >    done(null, user);</span>
-})
-&nbsp;
-&nbsp;
-app.get('/', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; { <span class="cstat-no" title="statement not covered" >res.send(req.session.user !== undefined ? `Logend is as ${req.session.user.displayName}` : "Logged Out") </span>});
-&nbsp;
-app.get('/github/callback', passport.authenticate('github', {
-    failureRedirect: '/api-docs', session: false
-}),
-<span class="fstat-no" title="function not covered" >    (r</span>eq, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >        req.session.user = req.user;</span>
-<span class="cstat-no" title="statement not covered" >        res.redirect('/');</span>
-    });
-&nbsp;
-&nbsp;
-app.get('/auth/google/callback', passport.authenticate('google', {
-    failureRedirect: '/api-docs', session: false
-}),
-<span class="fstat-no" title="function not covered" >    (r</span>eq, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >        req.session.user = req.user;</span>
-<span class="cstat-no" title="statement not covered" >        res.redirect('/');</span>
-    });
-&nbsp;
-&nbsp;
-&nbsp;
-<span class="missing-if-branch" title="if path not taken" >I</span>if (process.env.NODE_ENV !== "test") {
-<span class="cstat-no" title="statement not covered" >    mongodb.intMongo(<span class="fstat-no" title="function not covered" >(e</span>rr) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        if (err) {</span>
-<span class="cstat-no" title="statement not covered" >            console.log(err);</span>
-        } else {
-<span class="cstat-no" title="statement not covered" >            app.listen(port, <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >                console.log(`Database is listening and node is running on port ${port}`);</span>
-            });
-        }
-    });
+// GET one REVIEW
+const getOneReview = async (req, res, next) =&gt; {
+    //#swagger.tags=['reviews']
+    try {
+        const reviewId = new ObjectId(req.params.id);
+        const result = <span class="cstat-no" title="statement not covered" >await database.getDb().db().collection('reviews').find({ _id: reviewId });</span>
+<span class="cstat-no" title="statement not covered" >        result.toArray().then(<span class="fstat-no" title="function not covered" >(r</span>eviews) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            res.setHeader('Content-type', 'application/json');</span>
+<span class="cstat-no" title="statement not covered" >            res.status(200).json(reviews[0]);</span>
+        });
+    } catch (error) {
+        next(error);
+    }
 }
 &nbsp;
-module.exports = app;</pre></td></tr></table></pre>
+// POST --- CREATE AN REVIEW 
+const createReview = <span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+    //#swagger.tags=['reviews']
+&nbsp;
+    const errors = <span class="cstat-no" title="statement not covered" >validationResult(req);</span>
+<span class="cstat-no" title="statement not covered" >    if (!errors.isEmpty()) {</span>
+<span class="cstat-no" title="statement not covered" >        return res.status(400).json({ errors: errors.array() });</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    try {</span>
+        const review = <span class="cstat-no" title="statement not covered" >{</span>
+            userId: req.body.userId,
+            eventId: req.body.eventId,
+            rating: req.body.rating,
+            comment: req.body.comment,
+            createdAt: req.body.createdAt
+        };
+&nbsp;
+        const response = <span class="cstat-no" title="statement not covered" >await database.getDb().db().collection('reviews').insertOne(review);</span>
+<span class="cstat-no" title="statement not covered" >        if (response.acknowledged) {</span>
+<span class="cstat-no" title="statement not covered" >            res.status(204).send();</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            res.status(500).json(response.error || 'Error ocurred until we created the review');</span>
+        }
+    } catch (error) {
+<span class="cstat-no" title="statement not covered" >        next(error);</span>
+    }
+};
+&nbsp;
+// PUT --- review
+const updateReview = <span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+    //#swagger.tags=['reviews']
+    const errors = <span class="cstat-no" title="statement not covered" >validationResult(req);</span>
+<span class="cstat-no" title="statement not covered" >    if (!errors.isEmpty()) {</span>
+<span class="cstat-no" title="statement not covered" >        return res.status(400).json({ errors: errors.array() });</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    try {</span>
+        const reviewId = <span class="cstat-no" title="statement not covered" >new ObjectId(req.params.id);</span>
+        const review = <span class="cstat-no" title="statement not covered" >{</span>
+            userId: req.body.userId,
+            eventId: req.body.eventId,
+            rating: req.body.rating,
+            comment: req.body.comment,
+            createdAt: req.body.createdAt
+        };
+        const response = <span class="cstat-no" title="statement not covered" >await database.getDb().db().collection('reviews').replaceOne({ _id: reviewId }, review);</span>
+<span class="cstat-no" title="statement not covered" >        if (response.modifiedCount &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >            res.status(200).send();</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            res.status(500).json(response.error || 'Error ocurred util we update the review');</span>
+        }
+    } catch (error) {
+<span class="cstat-no" title="statement not covered" >        next(error);</span>
+    }
+&nbsp;
+}
+&nbsp;
+// DELETE REVIEW BY ID
+const deleteReview = <span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+    //#swagger.tags=['reviews']
+<span class="cstat-no" title="statement not covered" >    try {</span>
+        const reviewId = <span class="cstat-no" title="statement not covered" >new ObjectId(req.params.id);</span>
+        const response = <span class="cstat-no" title="statement not covered" >await database.getDb().db().collection('reviews').deleteOne({ _id: reviewId });</span>
+<span class="cstat-no" title="statement not covered" >        if (response.deletedCount &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >            res.status(204).send();</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            res.status(500).json(response.error || 'Error ocurred until we delete the review');</span>
+        }
+    } catch (error) {
+<span class="cstat-no" title="statement not covered" >        next(error);</span>
+    }
+}
+&nbsp;
+module.exports = { getAllReviews, getOneReview, createReview, updateReview, deleteReview };</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
@@ -390,14 +393,14 @@ module.exports = app;</pre></td></tr></table></pre>
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
                 at 2026-04-11T15:00:17.189Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
     </body>
 </html>
     
