@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1775924178805" clover="3.2.0">
-  <project timestamp="1775924178805" name="All files">
+<coverage generated="1776101618849" clover="3.2.0">
+  <project timestamp="1776101618850" name="All files">
     <metrics statements="351" coveredstatements="176" conditionals="86" coveredconditionals="9" methods="50" coveredmethods="11" elements="487" coveredelements="196" complexity="0" loc="351" ncloc="351" packages="6" files="19" classes="19"/>
     <package name="eventHub">
       <metrics statements="38" coveredstatements="25" conditionals="8" coveredconditionals="3" methods="10" coveredmethods="1"/>
-      <file name="server.js" path="C:\Users\W10-PC\Downloads\eventHub\server.js">
+      <file name="server.js" path="C:\Users\PC\Desktop\eventHub\server.js">
         <metrics statements="38" coveredstatements="25" conditionals="8" coveredconditionals="3" methods="10" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -48,7 +48,7 @@
     </package>
     <package name="eventHub.src.config">
       <metrics statements="16" coveredstatements="8" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="1"/>
-      <file name="db.js" path="C:\Users\W10-PC\Downloads\eventHub\src\config\db.js">
+      <file name="db.js" path="C:\Users\PC\Desktop\eventHub\src\config\db.js">
         <metrics statements="16" coveredstatements="8" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -70,7 +70,7 @@
     </package>
     <package name="eventHub.src.controllers">
       <metrics statements="200" coveredstatements="57" conditionals="64" coveredconditionals="0" methods="28" coveredmethods="7"/>
-      <file name="eventController.js" path="C:\Users\W10-PC\Downloads\eventHub\src\controllers\eventController.js">
+      <file name="eventController.js" path="C:\Users\PC\Desktop\eventHub\src\controllers\eventController.js">
         <metrics statements="50" coveredstatements="15" conditionals="16" coveredconditionals="0" methods="7" coveredmethods="2"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -123,7 +123,7 @@
         <line num="114" count="0" type="stmt"/>
         <line num="118" count="4" type="stmt"/>
       </file>
-      <file name="registrationController.js" path="C:\Users\W10-PC\Downloads\eventHub\src\controllers\registrationController.js">
+      <file name="registrationController.js" path="C:\Users\PC\Desktop\eventHub\src\controllers\registrationController.js">
         <metrics statements="50" coveredstatements="15" conditionals="16" coveredconditionals="0" methods="7" coveredmethods="2"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -176,7 +176,7 @@
         <line num="101" count="0" type="stmt"/>
         <line num="105" count="4" type="stmt"/>
       </file>
-      <file name="reviewController.js" path="C:\Users\W10-PC\Downloads\eventHub\src\controllers\reviewController.js">
+      <file name="reviewController.js" path="C:\Users\PC\Desktop\eventHub\src\controllers\reviewController.js">
         <metrics statements="50" coveredstatements="15" conditionals="16" coveredconditionals="0" methods="7" coveredmethods="2"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -229,7 +229,7 @@
         <line num="104" count="0" type="stmt"/>
         <line num="108" count="4" type="stmt"/>
       </file>
-      <file name="userController.js" path="C:\Users\W10-PC\Downloads\eventHub\src\controllers\userController.js">
+      <file name="userController.js" path="C:\Users\PC\Desktop\eventHub\src\controllers\userController.js">
         <metrics statements="50" coveredstatements="12" conditionals="16" coveredconditionals="0" methods="7" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -285,7 +285,7 @@
     </package>
     <package name="eventHub.src.middleware">
       <metrics statements="14" coveredstatements="10" conditionals="10" coveredconditionals="5" methods="3" coveredmethods="2"/>
-      <file name="authenticate.js" path="C:\Users\W10-PC\Downloads\eventHub\src\middleware\authenticate.js">
+      <file name="authenticate.js" path="C:\Users\PC\Desktop\eventHub\src\middleware\authenticate.js">
         <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -293,7 +293,7 @@
         <line num="5" count="0" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
       </file>
-      <file name="authorizationMiddleware.js" path="C:\Users\W10-PC\Downloads\eventHub\src\middleware\authorizationMiddleware.js">
+      <file name="authorizationMiddleware.js" path="C:\Users\PC\Desktop\eventHub\src\middleware\authorizationMiddleware.js">
         <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="1" type="cond" truecount="2" falsecount="2"/>
@@ -301,7 +301,7 @@
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
       </file>
-      <file name="errorHandler.js" path="C:\Users\W10-PC\Downloads\eventHub\src\middleware\errorHandler.js">
+      <file name="errorHandler.js" path="C:\Users\PC\Desktop\eventHub\src\middleware\errorHandler.js">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="7" type="stmt"/>
@@ -311,7 +311,7 @@
     </package>
     <package name="eventHub.src.routes">
       <metrics statements="71" coveredstatements="64" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="eventRoutes.js" path="C:\Users\W10-PC\Downloads\eventHub\src\routes\eventRoutes.js">
+      <file name="eventRoutes.js" path="C:\Users\PC\Desktop\eventHub\src\routes\eventRoutes.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -325,7 +325,7 @@
         <line num="12" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
       </file>
-      <file name="index.js" path="C:\Users\W10-PC\Downloads\eventHub\src\routes\index.js">
+      <file name="index.js" path="C:\Users\PC\Desktop\eventHub\src\routes\index.js">
         <metrics statements="21" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -349,7 +349,7 @@
         <line num="62" count="0" type="stmt"/>
         <line num="67" count="4" type="stmt"/>
       </file>
-      <file name="registrationRoutes.js" path="C:\Users\W10-PC\Downloads\eventHub\src\routes\registrationRoutes.js">
+      <file name="registrationRoutes.js" path="C:\Users\PC\Desktop\eventHub\src\routes\registrationRoutes.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -363,7 +363,7 @@
         <line num="12" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
       </file>
-      <file name="reviewRoutes.js" path="C:\Users\W10-PC\Downloads\eventHub\src\routes\reviewRoutes.js">
+      <file name="reviewRoutes.js" path="C:\Users\PC\Desktop\eventHub\src\routes\reviewRoutes.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -377,7 +377,7 @@
         <line num="12" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
       </file>
-      <file name="swagger.js" path="C:\Users\W10-PC\Downloads\eventHub\src\routes\swagger.js">
+      <file name="swagger.js" path="C:\Users\PC\Desktop\eventHub\src\routes\swagger.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -386,7 +386,7 @@
         <line num="6" count="4" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
       </file>
-      <file name="userRoutes.js" path="C:\Users\W10-PC\Downloads\eventHub\src\routes\userRoutes.js">
+      <file name="userRoutes.js" path="C:\Users\PC\Desktop\eventHub\src\routes\userRoutes.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -403,25 +403,25 @@
     </package>
     <package name="eventHub.src.validations">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="eventValidation.js" path="C:\Users\W10-PC\Downloads\eventHub\src\validations\eventValidation.js">
+      <file name="eventValidation.js" path="C:\Users\PC\Desktop\eventHub\src\validations\eventValidation.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="34" count="4" type="stmt"/>
       </file>
-      <file name="registrationValidation.js" path="C:\Users\W10-PC\Downloads\eventHub\src\validations\registrationValidation.js">
+      <file name="registrationValidation.js" path="C:\Users\PC\Desktop\eventHub\src\validations\registrationValidation.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
       </file>
-      <file name="reviewValidation.js" path="C:\Users\W10-PC\Downloads\eventHub\src\validations\reviewValidation.js">
+      <file name="reviewValidation.js" path="C:\Users\PC\Desktop\eventHub\src\validations\reviewValidation.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="21" count="4" type="stmt"/>
       </file>
-      <file name="userValidation.js" path="C:\Users\W10-PC\Downloads\eventHub\src\validations\userValidation.js">
+      <file name="userValidation.js" path="C:\Users\PC\Desktop\eventHub\src\validations\userValidation.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
