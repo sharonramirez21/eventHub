@@ -50,7 +50,7 @@ const createUser = async (req, res, next) => {
             createdAt: req.body.createdAt
         };
 
-        const response = await database.getDb().db().collection('reviews').insertOne(user);
+        const response = await database.getDb().db().collection('users').insertOne(user);
         if (response.acknowledged) {
             res.status(204).send();
         } else {
