@@ -49,11 +49,13 @@ router.get(
 
 
 // Start Google login
+// Start Google login
 router.get(
-  "/auth/github/callback",
+  "/auth/google",
   passport.authenticate("google", { scope: ["profile", "email"] })
 );
 
+// Google callback
 router.get(
   "/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/login" }),
